@@ -24,12 +24,11 @@ public class AnalizadorLexicoService {
 
         Map.Entry<StateType, State> stateFirst = states.entrySet().stream().filter(es -> es.getValue().isInitial()).findFirst().get();
 
-//        if (args == null || args.length == 0) {
-//            throw new RuntimeException("Diretório arquivo não informado");
-//        }
+        if (args == null || args.length == 0) {
+            throw new RuntimeException("Diretório arquivo não informado");
+        }
 
-//        List<String> lines = Files.readAllLines(Paths.get(args[0]));
-        List<String> lines = Files.readAllLines(Paths.get("C:\\projetos\\analisador-lexico\\arquivo-test.txt"));
+        List<String> lines = Files.readAllLines(Paths.get(args[0]));
 
         for (int i = 0; i < lines.size(); i++) {
             handler(states, stateFirst, lines.get(i), i);

@@ -1,0 +1,19 @@
+_a
+_a
+int
+_asd
+_as123
+99
+99.
+99.999
+float
+real a
+real
+double _c
+double
+as_asd
+_asd
+/* Tales Bitelo Viegas */
+-- Teste
+Tales Viegas --
+char
